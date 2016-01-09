@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/footbar_play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/shape_input_little_text_gray"
+        android:gravity="center_horizontal|left"
+        android:padding="5dp"
+        android:text="@string/hudong"
+        android:textColor="@color/text_grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footbar_play"
+        android:background="@color/grey"
+        android:fadingEdge="none"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.yike.view.NoScroListView
+                android:id="@+id/listview_xuanji"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                style="@style/MyLineImage"
+                android:layout_height="5dp"
+                android:src="@color/grey" />
+
+            <com.yike.view.NoScroListView
+                android:id="@+id/listview_pinglun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.yike.view.NoScroListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

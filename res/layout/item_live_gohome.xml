@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:background="@color/pure_white">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+        <com.yike.view.RoundAngleImageView
+                android:id="@+id/item_live_pic"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                app:roundHeight="5dp"
+                app:roundWidth="5dp"/>
+
+        <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play_button_one"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp">
+
+        <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="07 - 18 | 2015"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/text_grey_sub"
+                android:textSize="12sp"/>
+
+
+        <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="6dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/img_reservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reservation_view"
+                    />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

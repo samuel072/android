@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yike"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/albumback" >
+
+    <com.yike.view.RoundAngleImageView
+        android:id="@+id/img_grid"
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerCrop"
+        app:roundHeight="5dp"
+        app:roundWidth="5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_grid"
+        android:padding="3dp"
+        android:text="4.30 13:00"
+        android:textColor="@color/text_grey"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView2"
+        android:paddingLeft="3dp"
+        android:text="热点内容"
+        android:textColor="@color/text_grey"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/text_name"
+        android:padding="3dp"
+        android:text="预 约"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/img_grid"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

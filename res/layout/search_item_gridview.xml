@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yike"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_gravity="center_vertical" >
+
+    <com.yike.view.RoundAngleImageView
+        android:id="@+id/img_grid"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        app:roundHeight="5dp"
+        app:roundWidth="5dp" />
+
+</RelativeLayout>

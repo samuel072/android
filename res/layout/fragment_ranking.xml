@@ -1,0 +1,56 @@
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rd_group"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/pure_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="今日排行榜"
+                android:textColor="@drawable/text_color_white_and_black_no_pressed_selector" />
+
+            <RadioButton
+                android:id="@+id/toMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="本月排行榜"
+                android:textColor="@drawable/text_color_white_and_black_no_pressed_selector" />
+        </RadioGroup>
+
+        <com.yike.view.NoScroListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@color/write"
+            android:divider="@color/grey"
+            android:dividerHeight="10dp" />
+    </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

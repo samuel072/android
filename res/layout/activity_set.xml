@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <!-- 引用底部导航栏的布局文件 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/navi_height"
+        android:background="@color/topbar_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/return_arrow" />
+
+        <Button
+            android:id="@+id/img_live"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置"
+            android:textColor="@color/pure_white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="新版本检测"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/set_chenckVersionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="软件版本型号"
+        android:textSize="16sp"
+        android:background="@color/pure_white"
+        android:textColor="@color/text_black" />
+
+    <RelativeLayout
+        android:id="@+id/userinfo_emailArea"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pure_white"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/set_userCacheTet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="0M"
+            android:textColor="@color/text_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="清空应用缓存"
+            android:textColor="@color/text_black"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="登录设置"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/set_qq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:alpha="0.5"
+            />
+
+        <Button
+            android:id="@+id/set_wx"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+             />
+
+        <Button
+            android:id="@+id/set_wb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:alpha="0.5"
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_outBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_oval_default_color"
+        android:gravity="center"
+        android:text="退出登陆"
+        android:textColor="#3e6696"
+        android:textSize="16sp" />
+
+</LinearLayout>

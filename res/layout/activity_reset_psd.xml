@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topcontent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_height"
+        android:background="@color/topbar_bg" >
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/return_arrow" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/reset_titleTet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="手机重置密码"
+            android:textColor="@color/pure_white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <!-- 手机注册 -->
+
+    <LinearLayout
+        android:id="@+id/reset_phoneArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:text="请输入您的手机号码获取验证码" />
+
+        <EditText
+            android:id="@+id/reset_phoneEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_input_normal"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="请输入11位手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" >
+
+            <EditText
+                android:id="@+id/rest_codeEdt"
+                style="@style/edit_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/reset_codeBtn"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:hint="请输入验证码"
+                android:background="@drawable/edit_input_normal"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/reset_codeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_input_normal"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/_getRegisterCode"
+                android:textColor="@color/pure_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/reset_phonePsdEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_input_normal"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="@string/input_psd"
+            android:paddingLeft="10dp"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/reset_phoneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_trans_select"
+            android:text="完成"
+            android:textColor="@color/pure_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reset_emailArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/reset_emailEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_input_select"
+            android:drawableLeft="@drawable/edit_count_select"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="@string/input_count"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/reset_emialBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_oval_default_color"
+            android:text="@string/_next"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

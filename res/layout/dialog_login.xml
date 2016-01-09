@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+      android:minHeight="60dp"
+    android:minWidth="280dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/pop_login_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="登录"
+       />
+    <RelativeLayout
+        android:id="@+id/pop_letter_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+        <View
+            android:id="@+id/pop_login_center"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/pop_login_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/pop_login_center"
+            style="@style/mybutton"
+            android:text="@string/login"
+            android:background="@drawable/btn_style_blue_select"
+           />
+        <Button
+            android:id="@+id/pop_login_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pop_login_center"
+            style="@style/mybutton"
+            android:text="@string/cancle"
+            android:background="@drawable/btn_style_red_select"
+          />
+    </RelativeLayout>
+
+</LinearLayout>

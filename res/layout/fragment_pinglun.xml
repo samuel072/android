@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_padding"
+        android:layout_marginRight="@dimen/fragment_padding"
+        android:layout_marginTop="@dimen/fragment_padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_back_pinglun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/write"
+            android:drawableLeft="@drawable/return_arrow"
+            android:drawablePadding="@dimen/fragment_padding"
+            android:padding="@dimen/fragment_padding"
+            android:text="@string/back_pinglun" />
+
+        <ImageView
+            style="@style/MyLineImage"
+            android:src="@color/albumback" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_pinglun_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/fragment_padding"
+        android:layout_marginRight="@dimen/fragment_padding"
+        android:layout_weight="1"
+        android:background="@color/write" />
+
+    <TextView
+        android:id="@+id/footbar_play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_input_little_text_gray"
+        android:gravity="center_horizontal|left"
+        android:padding="5dp"
+        android:text="@string/hudong"
+        android:textColor="@color/text_grey" />
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_video"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mediacontroller_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mediacontroller_button"
+            android:padding="10dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/return_arrow" />
+
+        <Button
+            android:id="@+id/btn_xuanji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/xuanji"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_video_titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_biaoqing"
+            android:layout_toRightOf="@id/img_btn_back" />
+
+        <Button
+            android:id="@+id/btn_biaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gb_gaoqing_select"
+            android:padding="5dp"
+            android:text="@string/gaoqing"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/mediacontroller_button"
+        android:padding="10dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rl_video_below"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/im_play_or_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mediacontroller_button"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:src="@drawable/mediacontroller_pause" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/im_play_or_pause"
+            android:background="@drawable/mediacontroller_button"
+            android:padding="10dp"
+             />
+
+        <ImageButton
+            android:id="@+id/im_play_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_line"
+            android:background="@drawable/mediacontroller_button"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/im_play_next"
+            android:text="0:00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/img_paly_fangda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mediacontroller_button"
+            android:padding="10dp"
+             />
+
+        <ImageButton
+            android:id="@+id/ImageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_paly_fangda"
+            android:background="@drawable/mediacontroller_button"
+            android:padding="10dp"
+             />
+
+        <LinearLayout
+            android:id="@+id/rl_play_kongjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ImageButton3"
+            android:layout_toRightOf="@id/tv_video_time"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mediacontroller_button"
+                android:padding="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/ImageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mediacontroller_button"
+                android:padding="10dp"
+                 />
+
+            <ImageButton
+                android:id="@+id/ImageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mediacontroller_button"
+                android:padding="10dp"
+              />
+
+            <ImageButton
+                android:id="@+id/ImageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mediacontroller_button"
+                android:padding="10dp"
+                 />
+
+            <ImageButton
+                android:id="@+id/ImageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mediacontroller_button"
+                android:padding="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seek_video"
+        style="@style/MediaController_SeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_video_below"
+        android:focusable="true"
+        android:max="1000" />
+
+    <RadioGroup
+        android:id="@+id/rg_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_biaoqing"
+            style="@style/RadioButtonSytle"
+            android:checked="true"
+            android:text="@string/biaoqing"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_gaoqing"
+            style="@style/RadioButtonSytle"
+            android:text="@string/gaoqing" />
+
+        <RadioButton
+            android:id="@+id/rb_chaoqing"
+            style="@style/RadioButtonSytle"
+            android:text="@string/chaoqing"
+            android:visibility="gone" />
+    </RadioGroup>
+
+</RelativeLayout>

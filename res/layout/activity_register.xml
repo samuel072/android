@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topcontent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_height"
+        android:background="@color/topbar_bg" >
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/return_arrow" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="backBtn" />
+
+        <TextView
+            android:id="@+id/register_titleTet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/regiter"
+            android:textColor="@color/pure_white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <!-- 手机注册 -->
+
+    <LinearLayout
+        android:id="@+id/register_phoneArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/register_phoneEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="请输入11位手机号"
+            android:background="@drawable/edit_input_normal"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp" >
+
+            <EditText
+                android:id="@+id/register_codeEdt"
+                style="@style/edit_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/register_codeBtn"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:background="@drawable/edit_input_normal"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/register_codeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_input_normal"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/_getRegisterCode"
+                android:textColor="@color/pure_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/register_psdEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_input_normal"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="@string/input_psd"
+            android:paddingLeft="10dp"
+            android:password="true" />
+    </LinearLayout>
+
+    <!-- 邮箱注册 -->
+
+    <LinearLayout
+        android:id="@+id/register_emailArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/register_emailEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/edit_count_select"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="@string/input_email"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/register_psdEmailEdt"
+            style="@style/edit_input_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/edit_psd_select"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:hint="@string/input_psd"
+            android:paddingLeft="10dp"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_trans_select"
+        android:text="@string/regiter_finish"
+        android:textColor="@color/pure_white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/indexView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:onClick="agreeBtn" />
+
+        <TextView
+            android:id="@+id/activity_xiyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/indexView"
+            android:gravity="center"
+            android:text="@string/_zhengzai_tv_"
+            android:textColor="@color/text_black_hl"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

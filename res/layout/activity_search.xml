@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/com.yike"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/netsearch_preaent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/topbar_bg">
+
+        <EditText
+                android:id="@+id/searchview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"
+                android:drawableLeft="@drawable/search_icon"
+                android:layout_toLeftOf="@+id/search_cancel"
+                android:drawablePadding="6dp"
+                android:background="@drawable/search_edit_bg"
+                android:dividerPadding="20dp"
+                android:ems="10"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="textFilter"
+                android:paddingRight="5dp"
+                android:queryHint="@string/search"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_black_l"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/search_text_size" />
+
+        <!-- android:persistentDrawingCache="none" -->
+        <!-- android:showDividers="none" -->
+        <!--             android:background="@drawable/btn_cancel_cm_selector"
+         -->
+        <ImageView
+                android:id="@+id/search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/search_cancel_margin_right"
+                android:gravity="center"
+                android:src="@drawable/cancel_button"
+                android:scaleType="centerInside" />
+
+        <ImageView
+                android:id="@+id/clear_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/searchview"
+                android:layout_alignTop="@+id/searchview"
+                android:layout_centerVertical="true"
+                android:src="@drawable/clear_text_selector"
+                android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/line">
+
+        <ScrollView
+                android:id="@+id/scrolview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/list_divider"
+                    android:dividerPadding="1px"
+                    android:orientation="vertical">
+
+                <com.yike.view.NoScroListView
+                        android:id="@+id/listview_search_albumlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                <com.yike.view.NoScroListView
+                        android:id="@+id/listview_search"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/listview_search_albumlist" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_search_defult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/DotTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_search" />
+
+            <com.yike.view.FlowLayout
+                    android:id="@+id/flowgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|top"
+                    android:padding="5dp"></com.yike.view.FlowLayout>
+
+            <TextView
+                    style="@style/DotTextView"
+                    android:text="@string/guess_youlike" />
+
+            <LinearLayout
+                    android:id="@+id/seach_xihunArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+
+                <com.yike.view.MyGridView
+                        android:id="@+id/search_xihuan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:verticalSpacing="5dp"
+                        android:numColumns="2"></com.yike.view.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

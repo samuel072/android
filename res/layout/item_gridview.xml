@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yike"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/pure_white" >
+
+    <com.yike.view.RoundAngleImageView
+        android:id="@+id/img_grid"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        app:roundHeight="5dp"
+        app:roundWidth="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_button_one" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_half_color" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="标题白兔"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/pure_white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/view_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/eye"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@color/pure_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/collect_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/view_count_tv"
+                android:drawableLeft="@drawable/like_click"
+                android:drawablePadding="3dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

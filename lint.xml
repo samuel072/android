@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="GradleCompatible" severity="informational" />
+    <issue id="InvalidPackage" severity="ignore" />
+    <issue id="LibraryCustomView" severity="ignore" />
+    <issue id="MissingRegistered" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+</lint>
